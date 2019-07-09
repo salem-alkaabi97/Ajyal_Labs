@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Make the Button Bigger</title>
+    <style>
+      button {
+        font-size: 1.5rem;
+        border-radius: 10px;
+        border: solid 1px #940c94;
+        background: linear-gradient(#cb2ff6 0%, #ffffff 100%);
+        padding: 0.25rem;
+        margin: 1rem;
+      }
+      button#button1:hover {
+        transform: scale(1.2);
+      }
+      button#button2:hover {
+        transform: rotate(50deg);
+      }
+      button#button3:hover {
+        transform: skew(10deg);
+      }
+      button#button4:hover {
+        transform: translate(50px);
+      }
+    </style>
+  </head>
+  <body>
+    <button id="button1">Scale</button>
+    <button id="button2">Rotate</button>
+    <button id="button3">Skew</button>
+    <button id="button4">translate</button>
+  </body>
+</html>
