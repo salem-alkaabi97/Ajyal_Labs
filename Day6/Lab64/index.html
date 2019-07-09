@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial- scale=1.0" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      [class*="col-"] {
+        float: left;
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+      }
+      .row::after {
+        content: "";
+        clear: both;
+        display: block;
+      }
+      .header {
+        background-color: #bdb76b;
+        padding: 15px;
+        color: #ffffff;
+        border-radius: 0px;
+        border: 1px solid #bdb76b;
+      }
+      .footer {
+        background-color: #bdb76b;
+        color: #ffffff;
+        text-align: center;
+        font-size: 1.3em;
+        padding: 15px;
+        border-radius: 0px;
+        border: 1px solid #bdb76b;
+      }
+      .well {
+        background-color: #82e0aa;
+        border: 1px solid #989898;
+        border-radius: 5px;
+        padding: 10px;
+      }
+      /* For mobile phones: */
+      [class*="col-"] {
+        width: 100%;
+      }
+      @media only screen and (min-width: 768px) {
+        /* For desktop: */
+        .col-1 {
+          width: 8.33%;
+        }
+        .col-2 {
+          width: 16.66%;
+        }
+        .col-3 {
+          width: 25%;
+        }
+        .col-4 {
+          width: 33.33%;
+        }
+        .col-5 {
+          width: 41.66%;
+        }
+        .col-6 {
+          width: 50%;
+        }
+        .col-7 {
+          width: 58.33%;
+        }
+        .col-8 {
+          width: 66.66%;
+        }
+        .col-9 {
+          width: 75%;
+        }
+        .col-10 {
+          width: 83.33%;
+        }
+        .col-11 {
+          width: 91.66%;
+        }
+      }
+      .col-12 {
+        width: 100%;
+      }
+      #main {
+        min-height: 500px;
+        background-color: #d1f2eb;
+        padding: 10px;
+        border: 1px solid #989898;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Responsive Web Design - Sample</h1>
+    </div>
+    <div class="row" id="main">
+      <div class="col-3">
+        <div class="well">
+          First Box
+          <ul>
+            <li>Home Page</li>
+            <li>New page</li>
+            <li>New Page 2</li>
+            <li>New Page 3</li>
+            <li>Contact Us</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="well">
+          Second Box <br />
+          Blog1<br />
+          Blog2<br />
+          Blog3<br />
+        </div>
+      </div>
+
+      <div class="col-3">
+        <div class="well">Third Box</div>
+      </div>
+    </div>
+    <div class="footer">
+      <p>Resize the browser to notice how the content fits in to the window.</p>
+    </div>
+  </body>
+</html>
