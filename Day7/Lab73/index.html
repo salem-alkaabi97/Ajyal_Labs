@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>Finding HTML Elements by Tag Name</h2>
+    ● Use the following paragraph elements
+    <p>Hello DigitalE1!</p>
+    <p>DigitalE1 says Hi to participants</p>
+    <p>
+      Here's this example demonstrating the <b>getElementsByTagName</b> method.
+    </p>
+    <p id="demo"></p>
+    <script>
+      var x = document.getElementsByTagName("p");
+      document.getElementById("demo").innerHTML =
+        "First paragraph (index 0) is: " +
+        x[0].innerHTML +
+        "<br>" +
+        "Second paragraph text (index 1) is: " +
+        x[1].innerHTML;
+    </script>
+  </body>
+</html>

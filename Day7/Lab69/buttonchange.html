@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <input id="myInput" type="text" style="width:150px" />
+    <button onclick="updatePara()">Update</button>
+    <p id="p1"></p>
+    <script>
+      function updatePara() {
+        var input = document.getElementById("myInput").value;
+        document.getElementById("p1").innerHTML = input;
+      }
+    </script>
+  </body>
+</html>

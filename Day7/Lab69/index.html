@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>Type the text on the first box and it will be on the second as well!</p>
+    <p>First box</p>
+    <input type="text" id="sourceTextField" onkeyup="change();" />
+    <p>Second box</p>
+    <input type="text" id="destinationTextField" value="" />
+    <script>
+      function change() {
+        var src = document.getElementById("sourceTextField");
+        var dest = document.getElementById("destinationTextField");
+        dest.value = src.value;
+      }
+    </script>
+  </body>
+</html>
