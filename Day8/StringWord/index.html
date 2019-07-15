@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>Click the button to display the array values after the split.</p>
+
+    <button onclick="myFunction()">Try it</button>
+
+    <p id="demo"></p>
+
+    <script>
+      function myFunction() {
+        var str = "My name is Salem And Im Cool";
+        var res = str.split(" ");
+        document.getElementById("demo").innerHTML = res;
+
+        console.log(res);
+      }
+    </script>
+  </body>
+</html>

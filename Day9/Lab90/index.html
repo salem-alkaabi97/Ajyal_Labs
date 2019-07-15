@@ -1,0 +1,18 @@
+<html>
+  <body>
+    <h2>JavaScript String Methods</h2>
+    <p>Using different methods to splice off same string segment</p>
+    <p id="DigitalE1"></p>
+    <script>
+      var str = "John, Stan, Kevin";
+      document.getElementById("DigitalE1").innerHTML =
+        str.slice(6, 10) +
+        "<br>" +
+        str.slice(-11, -7) +
+        "<br>" +
+        str.substring(6, 10) +
+        "<br>" +
+        str.substr(6, 4);
+    </script>
+  </body>
+</html>

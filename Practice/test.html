@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #ParentDiv {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+      }
+      #header {
+        text-align: center;
+        background: #637a91;
+        margin: auto;
+        padding: 5px;
+      }
+      #FirstLastNameParentDiv {
+        float: left;
+        height: 50%;
+        width: 100%;
+        box-sizing: border-box;
+        margin-top: 20px;
+        margin-bottom: 10px;
+      }
+      #emailPasswordParentDiv {
+        float: left;
+        height: 25%;
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+      }
+      #firstName {
+        text-align: center;
+        float: left;
+        width: 50%;
+        height: 50%;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+      }
+      #lastName {
+        text-align: center;
+        float: left;
+        width: 50%;
+        height: 50%;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+      }
+      #email {
+        text-align: center;
+        float: left;
+        height: 50%;
+        box-sizing: border-box;
+        margin-left: 20px;
+      }
+      #password {
+        text-align: center;
+        float: left;
+        width: 50%;
+        height: 50%;
+        box-sizing: border-box;
+      }
+      #btn {
+        background: #5fcf80;
+        width: 100%;
+        height: 30px;
+      }
+      #para {
+        margin-top: -1px;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <div id="ParentDiv">
+        <p id="header">Get started today!</p>
+        <div id="FirstLastNameParentDiv">
+          <div id="firstName">
+            <label for="firstname" pattern="[A-Za-z]">First name </label><br />
+            <input name="firstname" id="firstname" />
+          </div>
+          <div id="lastName">
+            <lable for="lastname" pattern="|[A-Za-z]">Last name</lable><br />
+            <input name="lastname" id="lastname" />
+          </div>
+        </div>
+        <br />
+        <div id="emailPasswordParentDiv">
+          <div id="email">
+            <label for="email">Email address</label><br />
+            <input type="email" pattern="[^ @]*@[^ @]*" id="email" />
+          </div>
+          <div id="password">
+            <label for="password">Password</label><br />
+            <input
+              type="password"
+              pattern="^)?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"
+              id="password"
+            />
+          </div>
+        </div>
+      </div>
+
+      <button id="btn" type="button">Claim Your Free Trial ></button>
+      <p id="para">
+        You are agreeing to our <a href="www.google.com">Terms and Services</a>
+      </p>
+    </form>
+  </body>
+</html>

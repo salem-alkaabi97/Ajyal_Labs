@@ -1,0 +1,27 @@
+<html>
+  <body>
+    <h2>JavaScript Objects</h2>
+    <p id="DigitalE1"></p>
+    <script>
+      var str =
+        "Kevin Peterson is 45 years old male having hazel colored eyes.";
+      var person = {
+        fullName: "Kevin Peterson",
+        gensex: "male",
+        age: 45,
+        eyeColor: "hazel"
+      };
+      //defining Object person
+      document.getElementById("DigitalE1").innerHTML =
+        person.fullName +
+        " is a " +
+        person.age +
+        "-year-old " +
+        person.gensex +
+        " having " +
+        person.eyeColor +
+        " colored eyes.";
+      //displaying data from the Object
+    </script>
+  </body>
+</html>

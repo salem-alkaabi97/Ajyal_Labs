@@ -1,0 +1,19 @@
+<html>
+  <body>
+    <div id="exXba">
+      <p>
+        This is the text in existing element named "exXba". <br />
+        And there is some additional text as well.
+      </p>
+    </div>
+    <script>
+      var DigitalE1 = document.createElement("DigitalE1");
+      var node = document.createTextNode(
+        "This is the new text node from DigitalE1 being appended into existing element."
+      );
+      DigitalE1.appendChild(node);
+      var element = document.getElementById("exXba");
+      element.appendChild(DigitalE1);
+    </script>
+  </body>
+</html>
