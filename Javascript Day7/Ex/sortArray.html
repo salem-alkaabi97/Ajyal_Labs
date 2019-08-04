@@ -1,0 +1,19 @@
+function sortArray(arr){ 
+    var output = [];
+    var inserted;
+    
+    for (var i = 0, ii = arr.length ; i < ii ; i++){
+      inserted = false;
+      for (var j = 0, jj = output.length ; j < jj ; j++){
+        if (arr[i] < output[j]){
+          inserted = true;
+          output.splice(j, 0, arr[i]);
+          break;
+        }
+      }
+      
+      if (!inserted)
+        output.push(arr[i])
+    }
+    return output;
+    }

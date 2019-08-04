@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+  <body>
+    <p>
+      Function that accepts an array and returns an array with the unique values
+    </p>
+    <p id="result"></p>
+    <script>
+      function removeDuplicate(arr) {
+        let uniqueArr = [];
+        for (var i = 0; i < arr.length; i++) {
+          var value = arr[i];
+          if (uniqueArr.indexOf(value) == -1) {
+            uniqueArr.push(value);
+          }
+        }
+        return uniqueArr;
+      }
+      document.getElementById("result").innerHTML = removeDuplicate([
+        "a,b,c,d,e,f,f,f,f,f,f"
+      ]);
+    </script>
+  </body>
+</head>
