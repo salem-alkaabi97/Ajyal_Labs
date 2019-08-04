@@ -1,0 +1,18 @@
+<html>
+  <body>
+    <h2>JavaScript Functions</h2>
+    <p>Invoking Function as Method</p>
+    <p id="xba"></p>
+    <script>
+      var myDigitalE1Object = {
+        firstVal: "DigitalE1 ",
+        lastVal: "Rocks!",
+        fullVal: function() {
+          return this.firstVal + this.lastVal;
+        }
+      };
+
+      document.getElementById("xba").innerHTML = myDigitalE1Object.fullVal();
+    </script>
+  </body>
+</html>

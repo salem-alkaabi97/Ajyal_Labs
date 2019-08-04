@@ -1,0 +1,16 @@
+<html>
+  <body>
+    <h2>JavaScript Functions</h2>
+    <p>In this example, myDigitalE1Function acts as a function constructor:</p>
+    <p id="xba"></p>
+    <script>
+      function myDigitalE1Function(arg1, arg2) {
+        this.firstVal = arg1;
+        this.lastVal = arg2;
+      }
+
+      var x = new myDigitalE1Function("DigitalE1", "Rocks!");
+      document.getElementById("xba").innerHTML = x.firstVal + " " + x.lastVal;
+    </script>
+  </body>
+</html>

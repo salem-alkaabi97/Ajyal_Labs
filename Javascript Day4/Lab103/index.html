@@ -1,0 +1,28 @@
+<html>
+  <body>
+    <h2>JavaScript Functions</h2>
+    <p>Invoking function using call ()</p>
+    <p id="xba"></p>
+    <script>
+      var person = {
+        fullVal: function(city, country) {
+          return (
+            this.firstName +
+            " " +
+            this.lastName +
+            "lives in " +
+            city +
+            ", " +
+            country
+          );
+        }
+      };
+      var person1 = {
+        firstName: "Kevin",
+        lastName: "Peterson"
+      };
+      var x = person.fullVal.call(person1, "Trent Bridge", "England");
+      document.getElementById("xba").innerHTML = x;
+    </script>
+  </body>
+</html>

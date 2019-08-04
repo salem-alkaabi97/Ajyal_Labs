@@ -1,0 +1,32 @@
+<html>
+  <body>
+    <h2>JavaScript Functions</h2>
+    <p>Invoking Function using apply () with Arguments</p>
+    <p id="demo"></p>
+    <script>
+      var person = {
+        fullVal: function(city, country) {
+          return (
+            this.firstName +
+            " " +
+            this.lastName +
+            "lives in" +
+            city +
+            ", " +
+            country
+          );
+        }
+      };
+      var person1 = {
+        firstName: "Kevin",
+        lastName: "Peterson"
+      };
+      var person2 = {
+        firstName: "Albie",
+        lastName: "Smith"
+      };
+      var x = person.fullVal.apply(person2, ["Durban", "South Africa"]);
+      document.getElementById("demo").innerHTML = x;
+    </script>
+  </body>
+</html>

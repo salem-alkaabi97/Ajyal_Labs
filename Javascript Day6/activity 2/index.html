@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1>Register for Job</h1>
+    <!-- register is function created in java  // this value refer to the form //onsubmit aceppt ture or fales "boolen" // action address where to subimt the form-->
+    <form action="/" onsubmit="return register(this)">
+      <div class="fields">
+        <label>Name</label>
+        <input type="text" name="name" />
+      </div>
+
+      <div class="fields">
+        <label>DOB</label>
+        <input type="date" name="DOB" />
+      </div>
+      <!-- <div class="fields">
+            <label>Age</label>
+            <input type="age" name="age"/>
+        </div> -->
+      <div>
+        <input type="radio" name="gender" value="male" checked /> Male
+        <input type="radio" name="gender" value="female" /> Female
+      </div>
+
+      <div class="fields">
+        <input type="submit" value="Register" />
+      </div>
+    </form>
+    <div id="result"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
